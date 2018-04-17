@@ -1,0 +1,14 @@
+        <!ELEMENT jornada (datosLiga, datosJornada, partidos)>
+        <!ELEMENT datosLiga (nombre)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT datosJornada (codigo, nombre, fecha)>
+        <!ELEMENT codigo (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT partidos (partido)+>
+        <!ELEMENT partido (codigo, fecha, nombreE1, nombreE2, resultadoE1, resultadoE2)*>
+        <!ATTLIST partido
+                jugado CDATA #REQUIRED>
+        <!ELEMENT nombreE1 (#PCDATA)>
+        <!ELEMENT nombreE2 (#PCDATA)>
+        <!ELEMENT resultadoE1 (#PCDATA)>
+        <!ELEMENT resultadoE2 (#PCDATA)>
