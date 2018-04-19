@@ -1,11 +1,11 @@
-DROP TABLE  dueño ;
+DROP TABLE  duenno ;
 
-CREATE TABLE dueño (
-  codDueño INT NOT NULL,
+CREATE TABLE duenno (
+  codduenno INT NOT NULL,
   nombre VARCHAR(10) NOT NULL,
   apellido1 VARCHAR(15) NOT NULL,
   apellido2 VARCHAR(15) NOT NULL,
-  PRIMARY KEY (codDueño));
+  PRIMARY KEY (codduenno));
 
 DROP TABLE liga;
 
@@ -18,14 +18,14 @@ DROP TABLE equipo ;
 
 CREATE TABLE equipo (
   codEquipo INT NOT NULL,
-  dueño_codDueño INT NOT NULL,
+  duenno_codduenno INT NOT NULL,
   nombre VARCHAR(10) NOT NULL,
   Liga_equipo_codEquipo INT NOT NULL,
   Liga_codLiga INT NOT NULL,
   PRIMARY KEY (codEquipo),
-  CONSTRAINT fk_equipo_dueño1
-    FOREIGN KEY (dueño_codDueño)
-    REFERENCES dueño (codDueño),
+  CONSTRAINT fk_equipo_duenno1
+    FOREIGN KEY (duenno_codduenno)
+    REFERENCES duenno (codduenno),
   CONSTRAINT fk_equipo_Liga1
     FOREIGN KEY (Liga_codLiga)
     REFERENCES liga (codLiga)
