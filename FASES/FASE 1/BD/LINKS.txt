@@ -1,0 +1,2 @@
+mySql: https://www.mysql.com/products/workbench/
+sqlDeveloper: http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html
