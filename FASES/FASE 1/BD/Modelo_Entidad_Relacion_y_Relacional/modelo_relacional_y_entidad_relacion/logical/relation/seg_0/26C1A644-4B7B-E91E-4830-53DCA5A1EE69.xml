@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="seDivide" directorySegmentName="seg_0" id="26C1A644-4B7B-E91E-4830-53DCA5A1EE69">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:02:07 UTC</createdTime>
+<generatorID>FF066F9F-B4F1-03D5-316A-C24D8066FCB9</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<engineerTo>
+<item key="5CAA8BF1-0653-22B8-1D85-C6F22B1E902A" value="true"/>
+</engineerTo>
+<sourcePk>D207BE9D-4E7B-E143-382C-9C741A777E37</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>218B14FC-0BDF-287A-3332-CD8F1A9776CB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>360526A2-9925-1792-A661-C2B355FF728A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

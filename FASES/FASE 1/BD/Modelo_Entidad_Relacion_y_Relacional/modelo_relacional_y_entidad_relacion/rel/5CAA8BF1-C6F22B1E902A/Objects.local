@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="C747E7F8-D45B-8FE0-45BF-1BF1541DE07F" name="duenno" seqName="seg_0"/>
+   <object objectType="Table" objectID="114EB643-3753-5884-7C40-7105CEDBD658" name="equipo" seqName="seg_0"/>
+   <object objectType="Table" objectID="4F3A82E4-71A3-5A3E-F5CD-FDEFEE71DD83" name="jornada" seqName="seg_0"/>
+   <object objectType="Table" objectID="2C1A2E41-8352-B572-6CE4-7A6540771086" name="juegaPartido" seqName="seg_0"/>
+   <object objectType="Table" objectID="FEF42767-CC60-EFE6-27AA-E699CE4D1A3A" name="jugador" seqName="seg_0"/>
+   <object objectType="Table" objectID="3BD1A76F-9EA4-A215-EA33-90751ADBF38B" name="liga" seqName="seg_0"/>
+   <object objectType="Table" objectID="24D2BA41-866F-A2CF-F6D9-34895906A403" name="partido" seqName="seg_0"/>
+   <object objectType="Table" objectID="9DA9895D-B57B-4080-B28D-14AF62520A36" name="usuarios" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A8D1AA61-E47D-7C12-5AC9-861C451B6FA2" name="fk_equipo_Liga1" seqName="seg_0" containerID="114EB643-3753-5884-7C40-7105CEDBD658" refContainerID="3BD1A76F-9EA4-A215-EA33-90751ADBF38B"/>
+   <object objectType="FKIndexAssociation" objectID="2F1B45EE-B02C-5E31-A9F3-58C6F400B201" name="fk_equipo_duenno1" seqName="seg_0" containerID="114EB643-3753-5884-7C40-7105CEDBD658" refContainerID="C747E7F8-D45B-8FE0-45BF-1BF1541DE07F"/>
+   <object objectType="FKIndexAssociation" objectID="9ED2F236-2F48-0C66-CB83-34B6F8F519A0" name="fk_equipo_has_partido_equipo1" seqName="seg_0" containerID="2C1A2E41-8352-B572-6CE4-7A6540771086" refContainerID="114EB643-3753-5884-7C40-7105CEDBD658"/>
+   <object objectType="FKIndexAssociation" objectID="56CB3445-1D5F-61A1-D1FC-1DA154D55B2A" name="fk_equipo_has_partido_partido1" seqName="seg_0" containerID="2C1A2E41-8352-B572-6CE4-7A6540771086" refContainerID="24D2BA41-866F-A2CF-F6D9-34895906A403"/>
+   <object objectType="FKIndexAssociation" objectID="FF066F9F-B4F1-03D5-316A-C24D8066FCB9" name="fk_jornada_Liga1" seqName="seg_0" containerID="4F3A82E4-71A3-5A3E-F5CD-FDEFEE71DD83" refContainerID="3BD1A76F-9EA4-A215-EA33-90751ADBF38B"/>
+   <object objectType="FKIndexAssociation" objectID="624FD6E8-3B14-3A34-A7CD-7C5564CF13B0" name="fk_jugador_equipo" seqName="seg_0" containerID="FEF42767-CC60-EFE6-27AA-E699CE4D1A3A" refContainerID="114EB643-3753-5884-7C40-7105CEDBD658"/>
+   <object objectType="FKIndexAssociation" objectID="5414867C-4CED-4B8B-8E17-880CD725431F" name="fk_partido_jornada1" seqName="seg_0" containerID="24D2BA41-866F-A2CF-F6D9-34895906A403" refContainerID="4F3A82E4-71A3-5A3E-F5CD-FDEFEE71DD83"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
