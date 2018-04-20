@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="jornada" directorySegmentName="seg_0" id="4F3A82E4-71A3-5A3E-F5CD-FDEFEE71DD83">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="codJornada" id="31A59055-3BAF-3434-FAAB-77CC56EB4939">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fechaJornadaI" id="32DA578F-607E-BF9B-5AFB-0FC0CD6F9C44">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Liga_codLiga" id="55F77920-494F-F7D1-42C8-E28D7FF96E6E">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fechaJornadaF" id="AAEC279F-B714-A752-8F83-52FE706813EB">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_jornada_Liga1" id="88C24140-EFF2-47F6-FBC2-FED78AA38DCB">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="jornada_PK" id="15B8F74B-6C61-762C-64CB-9D729B2A74C1">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

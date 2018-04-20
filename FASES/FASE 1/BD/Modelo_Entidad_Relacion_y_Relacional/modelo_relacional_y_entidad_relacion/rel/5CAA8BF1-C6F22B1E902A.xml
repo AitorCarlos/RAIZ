@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="script_sql" id="5CAA8BF1-0653-22B8-1D85-C6F22B1E902A" mainViewID="2A9CFBE4-3E49-2FC0-8BB4-BFCED75BB0E4">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>script_sql.sql</fileName>
+<pathName>C:\Users\alex\Desktop</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

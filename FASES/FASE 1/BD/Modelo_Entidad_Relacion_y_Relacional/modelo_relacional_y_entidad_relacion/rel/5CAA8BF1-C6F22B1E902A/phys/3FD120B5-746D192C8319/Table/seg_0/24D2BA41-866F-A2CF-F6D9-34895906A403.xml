@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="partido" directorySegmentName="seg_0" id="24D2BA41-866F-A2CF-F6D9-34895906A403">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="codPartido" id="13950289-2812-D2E3-2320-F546E7D4BAF5">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="jugado" id="4E6AF10B-DB3D-C62D-2C08-1078483F6D01">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="jornada_codJornada" id="66789483-671B-D1F3-CFBD-248CB54D1D96">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha" id="852F2803-C67E-1070-ED91-8009AAD339FC">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hora" id="8F519BDE-4575-527A-8631-7392646FC60F">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="resultado" id="FD359FEC-713C-264D-52FF-1AE6E399668C">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_partido_jornada1" id="412E97ED-8B4D-45CD-8963-B1E3C7D3A6B0">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="partido_PK" id="9FC3FAB3-0DF4-E5A2-D7FD-921C228B9A93">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

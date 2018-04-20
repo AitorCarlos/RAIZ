@@ -20,7 +20,6 @@ CREATE TABLE equipo (
   codEquipo INT NOT NULL,
   duenno_codduenno INT NOT NULL,
   nombre VARCHAR(10) NOT NULL,
-  Liga_equipo_codEquipo INT NOT NULL,
   Liga_codLiga INT NOT NULL,
   PRIMARY KEY (codEquipo),
   CONSTRAINT fk_equipo_duenno1
@@ -55,7 +54,6 @@ CREATE TABLE jornada (
   codJornada VARCHAR(45) NOT NULL,
   fechaJornadaI DATE NOT NULL,
   fechaJornadaF DATE NOT NULL,
-  Liga_equipo_codEquipo INT NOT NULL,
   Liga_codLiga INT NOT NULL,
   PRIMARY KEY (codJornada),
   CONSTRAINT fk_jornada_Liga1
@@ -104,4 +102,3 @@ CREATE TABLE usuarios (
   permiso VARCHAR(15) NOT NULL,
   PRIMARY KEY (codUsuario)
 );
-

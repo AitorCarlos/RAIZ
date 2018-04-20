@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F3A82E4-71A3-5A3E-F5CD-FDEFEE71DD83" name="jornada">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>79804362-D038-EFBE-4679-05138D2F05B3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codJornada" id="31A59055-3BAF-3434-FAAB-77CC56EB4939">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>3C57CCA2-7808-179B-D671-B74D9D05E57E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F752055-5201-1ECC-CE07-B6E0D7BB3F0F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaJornadaI" id="32DA578F-607E-BF9B-5AFB-0FC0CD6F9C44">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>6A1769C4-3741-B2C5-437D-0A0AAEB248E3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>810C4A7D-92EA-21C7-279C-C5BA9EE10733</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaJornadaF" id="AAEC279F-B714-A752-8F83-52FE706813EB">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>6706E534-78E7-5E2D-1F66-B070A29A7924</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>810C4A7D-92EA-21C7-279C-C5BA9EE10733</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Liga_codLiga" id="55F77920-494F-F7D1-42C8-E28D7FF96E6E">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>8B4A893B-7CA6-B6E0-FAEC-F77AF360E08E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF066F9F-B4F1-03D5-316A-C24D8066FCB9" referredColumn="D06A1C4C-2A71-1963-9824-A51DFC97B763"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15B8F74B-6C61-762C-64CB-9D729B2A74C1" name="jornada_PK">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>1F74629F-76F6-F1EB-A98C-B5647367BAAB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31A59055-3BAF-3434-FAAB-77CC56EB4939"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88C24140-EFF2-47F6-FBC2-FED78AA38DCB" name="fk_jornada_Liga1">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55F77920-494F-F7D1-42C8-E28D7FF96E6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="114EB643-3753-5884-7C40-7105CEDBD658" name="equipo">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>14239FCE-84B0-58FF-0D7B-5BB9294912BD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codEquipo" id="3CFB9824-17DA-8368-E095-FCC96278E3C8">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>9965A1C3-DD8F-E84D-7BC2-E577DB0D563B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duenno_codduenno" id="F69B38DD-81A6-7EC3-ECCA-77C00581A9C6">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>1E95EA6E-255C-6354-E330-855A73393E68</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F1B45EE-B02C-5E31-A9F3-58C6F400B201" referredColumn="3C91C7A0-908D-60E5-DD28-26FD2DF9EA1C"/>
+</associations>
+</Column>
+<Column name="nombre" id="3F19F29F-FB11-0956-515D-B3D6A547BCE0">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>329257CB-700E-1908-42DF-507F9AD1BD54</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2B703BD6-D6DE-4CAF-6265-03CA179B3E90</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Liga_codLiga" id="6A485B4B-74DA-D807-5D45-4BE66147A529">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>D62E42FF-D4D0-A52F-C120-292B0FCE497F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8D1AA61-E47D-7C12-5AC9-861C451B6FA2" referredColumn="D06A1C4C-2A71-1963-9824-A51DFC97B763"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE6E7E12-2E72-65D6-A2E2-65AAC9097638" name="equipo_PK">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>C5704494-825E-C1D5-E970-6DF4A862A22F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CFB9824-17DA-8368-E095-FCC96278E3C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D793CA6-49F0-6CDF-CB41-84B43AA7EE3A" name="fk_equipo_Liga1">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A485B4B-74DA-D807-5D45-4BE66147A529"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFEBA606-0A3B-98CA-3C2D-C4DFD6141937" name="fk_equipo_duenno1">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F69B38DD-81A6-7EC3-ECCA-77C00581A9C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

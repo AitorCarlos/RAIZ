@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C747E7F8-D45B-8FE0-45BF-1BF1541DE07F" name="duenno">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>F42E9B7B-EAC0-F7F9-CF5E-C3316EDAC5A3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codduenno" id="3C91C7A0-908D-60E5-DD28-26FD2DF9EA1C">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>02C162E8-F43C-6428-E690-FDE7ACC231E9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="9E092321-27FD-190B-ABB7-1BB37576DB3B">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>751298EF-9DD2-F15C-4CB4-13619DD73062</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2B703BD6-D6DE-4CAF-6265-03CA179B3E90</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido1" id="E5BB7E03-8112-1CF1-A375-21A1947E00DE">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>6A11793C-55B8-A952-E071-21B4F7E92306</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>569469CB-97FA-CBC2-62A4-9B1320B89756</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido2" id="BA7EBF15-5A6C-9BD4-D489-56F30735FFE4">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>8E9A38E6-BFD4-3AC0-B84E-328659FD26A5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>569469CB-97FA-CBC2-62A4-9B1320B89756</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8F441BB-63E3-F805-0AB9-C3ED2F07DC6B" name="duenno_PK">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<importedID>FECCB290-2A99-39E7-E8EB-73B76D6BDDC8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C91C7A0-908D-60E5-DD28-26FD2DF9EA1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
