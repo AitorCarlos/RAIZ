@@ -56,3 +56,22 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#VISUAL PARADING
+.vpprefdata/
+*.vpp~*
+*.vpp.working
+*.vpp.working-journal
+*.lock
+tmp/*
+
+#VISUAL PARADING
+target/
+.mwb.bak
+.cache
+.classpath
+.project
+.settings/
+.idea
+.idea_modules
+/FASES/FASE 1/PR/Master_ESport/nbproject/private/
