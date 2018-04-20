@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C1A2E41-8352-B572-6CE4-7A6540771086" name="juegaPartido">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>E3660AE4-E503-4129-EE4F-8B756F2AE769</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="equipo_codEquipo" id="32C8F77D-1800-A709-542D-F2B1D6238BC0">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>804D8881-958D-4678-6790-A322EE01EF5D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9ED2F236-2F48-0C66-CB83-34B6F8F519A0" referredColumn="3CFB9824-17DA-8368-E095-FCC96278E3C8"/>
+</associations>
+</Column>
+<Column name="partido_codPartido" id="F416D697-A3D8-4907-0498-3ED48DBEC23C">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>ECC2C509-97D2-CBC1-32E0-B1730BFE4CFE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5254677-43A3-415C-07C4-41C3DE848967</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56CB3445-1D5F-61A1-D1FC-1DA154D55B2A" referredColumn="13950289-2812-D2E3-2320-F546E7D4BAF5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12E01A59-E6B0-E128-4750-97B2F310808A" name="juegaPartido_PK">
+<sourceDDLFile>script_sql.sql</sourceDDLFile>
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>0C85368F-0B9D-037D-09D3-D02EF026A39A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32C8F77D-1800-A709-542D-F2B1D6238BC0"/>
+<colUsage columnID="F416D697-A3D8-4907-0498-3ED48DBEC23C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C907E6D2-C632-3331-4545-2C04A393BAD8" name="fk_equipo_has_partido_equipo1">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32C8F77D-1800-A709-542D-F2B1D6238BC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13611F42-0D4B-24D1-F696-354B99BB708A" name="fk_equipo_has_partido_partido1">
+<createdBy>alex</createdBy>
+<createdTime>2018-04-20 01:01:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>modelo_relacional_y_entidad_relacion</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F416D697-A3D8-4907-0498-3ED48DBEC23C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
