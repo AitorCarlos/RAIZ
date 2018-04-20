@@ -5,8 +5,6 @@
  */
 package master_esport;
 
-import UML_DB.DbConnection;
-
 /**
  *
  * @author Pistach
@@ -16,9 +14,8 @@ public class Master_ESport {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) {
         // TODO code application logic here
-        DbConnection n1 = new DbConnection();
     }
     
 }

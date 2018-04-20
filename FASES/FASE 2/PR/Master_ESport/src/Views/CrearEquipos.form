@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="LNombredelequipo" min="-2" max="-2" attributes="0"/>
+                  <Component id="LDueño" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LJugador1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LJugador2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LJugador3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LJugador4" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LJugador5" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LReserva" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="TDueño" alignment="0" max="32767" attributes="0"/>
+                  <Component id="TNombredelequipo" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="TReserva" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Tjugador5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Tjugador4" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Tjugador2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Tjugador1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Tjugador3" alignment="1" pref="140" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="100" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="TituloCrearEquipos" min="-2" pref="192" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="TituloCrearEquipos" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LNombredelequipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TNombredelequipo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LDueño" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TDueño" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LJugador1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Tjugador1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LJugador2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Tjugador2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LJugador3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Tjugador3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LJugador4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Tjugador4" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LJugador5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Tjugador5" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LReserva" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TReserva" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="59" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="TituloCrearEquipos">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Crear equipos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LNombredelequipo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre del equipo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LDue&#xf1;o">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Due&#xf1;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LJugador1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jugador 1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LJugador2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jugador 2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LJugador3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jugador 3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LJugador4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jugador 4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LJugador5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jugador 5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LReserva">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reserva"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TNombredelequipo">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TDue&#xf1;o">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Tjugador1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Tjugador2">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Tjugador3">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Tjugador4">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Tjugador5">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TReserva">
+    </Component>
+  </SubComponents>
+</Form>
