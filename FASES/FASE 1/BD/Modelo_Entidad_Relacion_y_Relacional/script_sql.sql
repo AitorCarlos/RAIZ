@@ -1,23 +1,26 @@
-DROP TABLE  duenno ;
+DROP TABLE  duenno cascade constraints;
+DROP TABLE jugador cascade constraints;
+drop table juegaPartido cascade constraints;
+DROP TABLE partido cascade constraints;
+drop table equipo cascade constraints;
+drop table jornada cascade constraints;
+drop table liga cascade constraints;
+drop table usuarios cascade constraints;
 
 CREATE TABLE duenno (
-  codduenno INT NOT NULL,
+  codduenno NUMBER  GENERATED ALWAYS AS IDENTITY,
   nombre VARCHAR(10) NOT NULL,
   apellido1 VARCHAR(15) NOT NULL,
   apellido2 VARCHAR(15) NOT NULL,
   PRIMARY KEY (codduenno));
 
-DROP TABLE liga;
-
 CREATE TABLE liga (
-  codLiga INT NOT NULL,
+  codLiga NUMBER  GENERATED ALWAYS AS IDENTITY,
   nombre VARCHAR(15) NOT NULL,
   PRIMARY KEY (codLiga));
 
-DROP TABLE equipo ;
-
 CREATE TABLE equipo (
-  codEquipo INT NOT NULL,
+  codEquipo NUMBER  GENERATED ALWAYS AS IDENTITY,
   duenno_codduenno INT NOT NULL,
   nombre VARCHAR(10) NOT NULL,
   Liga_codLiga INT NOT NULL,
@@ -30,11 +33,8 @@ CREATE TABLE equipo (
     REFERENCES liga (codLiga)
     );
 
-
-DROP TABLE jugador ;
-
 CREATE TABLE jugador (
-  codJugador INT NOT NULL,
+  codJugador NUMBER  GENERATED ALWAYS AS IDENTITY,
   nombre VARCHAR(10) NOT NULL,
   apellido1 VARCHAR(15) NULL,
   apellido2 VARCHAR(15) NULL,
@@ -47,11 +47,8 @@ CREATE TABLE jugador (
   REFERENCES equipo (codEquipo)
 );
 
-
-DROP TABLE jornada ;
-
 CREATE TABLE jornada (
-  codJornada VARCHAR(45) NOT NULL,
+  codJornada NUMBER  GENERATED ALWAYS AS IDENTITY,
   fechaJornadaI DATE NOT NULL,
   fechaJornadaF DATE NOT NULL,
   Liga_codLiga INT NOT NULL,
@@ -61,12 +58,9 @@ CREATE TABLE jornada (
     REFERENCES liga (codLiga)
     );
 
-
-DROP TABLE partido ;
-
 CREATE TABLE partido (
-  codPartido INT NOT NULL,
-  jornada_codJornada VARCHAR(15) NOT NULL,
+  codPartido NUMBER  GENERATED ALWAYS AS IDENTITY,
+  jornada_codJornada number,
   resultado VARCHAR(15) NOT NULL,
   fecha DATE NOT NULL,
   hora VARCHAR(5) NOT NULL,
@@ -77,12 +71,9 @@ CREATE TABLE partido (
     REFERENCES jornada (codJornada)
 );
 
-
-DROP TABLE juegaPartido ;
-
 CREATE TABLE juegaPartido (
-  equipo_codEquipo INT NOT NULL,
-  partido_codPartido INT NOT NULL,
+  equipo_codEquipo NUMBER,
+  partido_codPartido NUMBER,
   PRIMARY KEY (equipo_codEquipo, partido_codPartido),
   CONSTRAINT fk_equipo_has_partido_equipo1
     FOREIGN KEY (equipo_codEquipo)
@@ -92,13 +83,76 @@ CREATE TABLE juegaPartido (
     REFERENCES partido (codPartido)
 );
 
-
-DROP TABLE usuarios ;
-
 CREATE TABLE usuarios (
-  codUsuario INT NOT NULL,
+  codUsuario NUMBER  GENERATED ALWAYS AS IDENTITY,
   nombre VARCHAR(15) NOT NULL,
   contrasenna VARCHAR(15) NOT NULL,
   permiso VARCHAR(15) NOT NULL,
   PRIMARY KEY (codUsuario)
 );
+
+
+--TRIGGERS
+set serveroutput on;
+
+CREATE OR REPLACE TRIGGER maxJugadores
+BEFORE INSERT ON jugador for each row
+DECLARE
+    numJugadores int;
+BEGIN
+    select count(codJugador) into numJugadores from jugador where :new.equipo_codEquipo =  equipo_codEquipo;
+    if numJugadores >=6 then
+        Raise_Application_Error(-20001, 'LÍMITE DE JUGADORES');
+    end if;
+END;
+
+CREATE OR REPLACE TRIGGER maxSalarioEquipo
+BEFORE INSERT ON jugador for each row
+DECLARE
+    SalarioEquipo int;
+BEGIN
+    select sum(sueldo) into SalarioEquipo from jugador where :new.equipo_codEquipo = Equipo_Codequipo;
+    if salarioEquipo >=200000 then
+        Raise_Application_Error(-20002, 'LÍMITE DE SALARIO DE JUGADORES');
+    end if;
+END;
+
+
+--PRODECIMIENTOS ALMACENADOS
+
+CREATE PROCEDURE insertarJugador(nombreJugador   VARCHAR2,  apellido1Jugador VARCHAR2, apellido2Jugador VARCHAR2, nicknameJugador VARCHAR2, sueldo number, codEquipoJugador number)
+IS
+BEGIN
+  INSERT INTO jugador(nombre,  apellido1, apellido2, nickname, sueldo , equipo_codEquipo)
+     VALUES (INITCAP(nombreJugador),  INITCAP(apellido1Jugador), INITCAP(apellido2Jugador), UPPER(nicknameJugador), sueldo, codEquipoJugador);
+END;
+
+CREATE PROCEDURE equipoJuegaPartido(codEquipo number,codPartido number)
+IS
+BEGIN
+  INSERT INTO juegaPartido(equipo_codEquipo, partido_codPartido)
+     VALUES (codEquipo, codPartido);
+END;
+
+
+
+
+/*
+exec insertarJugador('rafa','rafa','rafa','rafa',1,1);
+select * from equipo;
+select * from jugador;
+select sum(sueldo) from jugador where Equipo_Codequipo=2;
+
+desc jugador;
+desc equipo;
+desc liga;
+desc duenno;
+
+insert into liga (nombre) values ('prueba');
+insert into duenno (nombre, apellido1,apellido2) values ('prueba','prueba', 'prueba');
+insert into equipo (Duenno_Codduenno, nombre, liga_codliga) values (1,'prueba',1);
+insert into jugador (nombre, apellido1, apellido2, nickname, sueldo, equipo_codequipo) values ('rafa','rafa','rafa','rafa',1,2); 
+delete from jugador;
+select * from jugador;
+select * from equipo;
+*/

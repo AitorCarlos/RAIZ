@@ -1,21 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package master_esport;
+import Uml.*;
+import java.util.ArrayList;
+import static javax.swing.JOptionPane.*;
+import src.Calendario;
 
-/**
- *
- * @author Pistach
- */
 public class Master_ESport {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList equipos = new <String> ArrayList();
+        equipos.add("a");equipos.add("b");
+        equipos.add("c");equipos.add("d");
+        new Calendario1(equipos);
     }
-    
 }
