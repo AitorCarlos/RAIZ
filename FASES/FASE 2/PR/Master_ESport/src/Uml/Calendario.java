@@ -2,11 +2,11 @@ package Uml;
 
 import java.util.ArrayList;
 
-public class Calendario1 {
+public class Calendario {
     private int[] equipos;
     private String[][] matriz1,matriz2,jornadas,jornadas2;
 	
-    public Calendario1(ArrayList equipos){
+    public Calendario(ArrayList equipos){
         
             matriz1 = new String[equipos.size()-1][equipos.size()/2];
             matriz2 = new String[equipos.size()-1][equipos.size()/2];
@@ -42,16 +42,18 @@ public class Calendario1 {
             
             int jorn = 1;
             for(int i=0;i<equipos.size()-1;i++){
+                System.out.println("JORNADA "+jorn);
                     for(int j=0;j<equipos.size()/2;j++){
+                            
                             System.out.print("J"+jorn+" "+jornadas[i][j]); 
                             if(j==(equipos.size()/2)-1) System.out.println();
                     }
                     jorn++;
             }
-
-            System.out.println();
+            
             jorn = equipos.size();
             for(int i=0;i<equipos.size()-1;i++){
+                System.out.println("JORNADA "+jorn);
                     for(int j=0;j<equipos.size()/2;j++){
                             System.out.print("J"+jorn+" "+jornadas2[i][j]);
                             if(j==(equipos.size()/2)-1) System.out.println();
