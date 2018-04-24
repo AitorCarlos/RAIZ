@@ -24,13 +24,17 @@ CREATE TABLE equipo (
   duenno_codduenno INT NOT NULL,
   nombre VARCHAR(10) NOT NULL,
   Liga_codLiga INT NOT NULL,
+  partido_codPartido NUMBER,
   PRIMARY KEY (codEquipo),
   CONSTRAINT fk_equipo_duenno1
     FOREIGN KEY (duenno_codduenno)
     REFERENCES duenno (codduenno),
   CONSTRAINT fk_equipo_Liga1
     FOREIGN KEY (Liga_codLiga)
-    REFERENCES liga (codLiga)
+    REFERENCES liga (codLiga),
+  CONSTRAINT fk_equipo_has_partido_partido
+    FOREIGN KEY (partido_codPartido)
+    REFERENCES partido (codPartido)
     );
 
 CREATE TABLE jugador (
@@ -61,10 +65,11 @@ CREATE TABLE jornada (
 CREATE TABLE partido (
   codPartido NUMBER  GENERATED ALWAYS AS IDENTITY,
   jornada_codJornada number,
-  resultado VARCHAR(15) NOT NULL,
+  resultadoE1 NUMBER(15),
+  resultadoE2 NUMBER(15),
   fecha DATE NOT NULL,
   hora VARCHAR(5) NOT NULL,
-  jugado VARCHAR(15) NOT NULL,
+  jugado VARCHAR(15),
   PRIMARY KEY (codPartido),
   CONSTRAINT fk_partido_jornada1
     FOREIGN KEY (jornada_codJornada)
@@ -78,9 +83,7 @@ CREATE TABLE juegaPartido (
   CONSTRAINT fk_equipo_has_partido_equipo1
     FOREIGN KEY (equipo_codEquipo)
     REFERENCES equipo (codEquipo),
-  CONSTRAINT fk_equipo_has_partido_partido1
-    FOREIGN KEY (partido_codPartido)
-    REFERENCES partido (codPartido)
+
 );
 
 CREATE TABLE usuarios (
@@ -94,6 +97,7 @@ CREATE TABLE usuarios (
 
 --TRIGGERS
 set serveroutput on;
+
 
 CREATE OR REPLACE TRIGGER maxJugadores
 BEFORE INSERT ON jugador for each row
@@ -120,6 +124,7 @@ END;
 
 --PRODECIMIENTOS ALMACENADOS
 
+drop procedure insertarJugador;
 CREATE PROCEDURE insertarJugador(nombreJugador   VARCHAR2,  apellido1Jugador VARCHAR2, apellido2Jugador VARCHAR2, nicknameJugador VARCHAR2, sueldo number, codEquipoJugador number)
 IS
 BEGIN
@@ -127,6 +132,7 @@ BEGIN
      VALUES (INITCAP(nombreJugador),  INITCAP(apellido1Jugador), INITCAP(apellido2Jugador), UPPER(nicknameJugador), sueldo, codEquipoJugador);
 END;
 
+drop procedure equipoJuegaPartido;
 CREATE PROCEDURE equipoJuegaPartido(codEquipo number,codPartido number)
 IS
 BEGIN
@@ -156,3 +162,10 @@ delete from jugador;
 select * from jugador;
 select * from equipo;
 */
+select * from liga;
+insert into liga (nombre) values ('prueba');
+insert into jornada (fechajornadai, Fechajornadaf, liga_codLiga) values(To_Date('11-12-18', 'dd/MM/yy'),To_Date('11-12-18',  'dd/MM/yy'),1);
+desc jornada;
+
+select  to_date('05-05-05' ,'dd/MM/yy') from dual;
+

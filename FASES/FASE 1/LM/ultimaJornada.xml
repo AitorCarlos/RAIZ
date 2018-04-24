@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE jornada SYSTEM "ultimaJornada.dtd">
 <jornada>
-    <datosLiga>
-        <nombre></nombre>
+    <datosLiga nombre="">
     </datosLiga>
     <datosJornada>
         <codigo></codigo>
-        <nombre></nombre>
         <fecha></fecha>
     </datosJornada>
     <partidos>
