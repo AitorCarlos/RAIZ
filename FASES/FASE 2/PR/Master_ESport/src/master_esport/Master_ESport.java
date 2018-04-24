@@ -5,6 +5,9 @@
  */
 package master_esport;
 
+import Views.AltaJugador;
+import Views.Consultas;
+
 /**
  *
  * @author Pistach
@@ -14,8 +17,19 @@ public class Master_ESport {
     /**
      * @param args the command line arguments
      */
+    private static Consultas vM;
+    
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        new Consultas().setVisible(true);
     }
     
+    
+    public static void reabrirVentanaInicio() {
+        abrirConsultas(vM);
+    }
+
 }
